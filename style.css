@@ -1,0 +1,124 @@
+
+/* Header */
+
+header {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 0px ;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    color: #8c3d3d;
+    text-align: center;
+    padding: 0.rem;
+    background-color: rgb(190,111,37);
+    }
+
+nav {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; 
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #000;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+}
+.food10{
+    margin:20;
+    margin-top: 20;
+    display: inline-block;
+   
+}
+.menu-section h2{
+    margin-top: 100px;
+    margin-left: 600;
+}
+.food-section {
+    margin: 20px;
+}
+
+.food-section h2 {
+    color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body{
+    background-color: rgb(190,111,37);
+    background: linear-gradient(360deg,rgb(245,255,245)0%,rgb(190,111 , 37)100%);
+}
+img {
+    max-width: 100%; /* Make images responsive */
+    height: 20pc;
+    border-radius: 5px;
+    margin-top: .5px;
+}
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e99621;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+.food1,.food2 {
+    display: inline-block;
+    margin: 10px;
+}
+button:hover{
+    background-color: black;
+}
+.view-Menu {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #230505;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+}
