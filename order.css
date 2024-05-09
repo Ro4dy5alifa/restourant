@@ -1,0 +1,71 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://thumbs.dreamstime.com/b/fork-rustic-wooden-table-copy-space-fork-rustic-wooden-table-copy-space-horizontal-format-100126991.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      align-items: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    #form {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 75%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    td.name, td.phone {
+      background-color: #f2f2f2;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: calc(100% - 10px);
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    #submit {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    /* #submit:hover {
+      background-color: #45a049;
+    } */
+
+    #h2{
+        text-align: center;
+        color: #333;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
