@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logStyle.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <section>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <h1>Login</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon> <input type="email" id="email" required>
+                <label for="">Email</label>
+                
+                <span id="gmailError" class="error"></span>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" id="password" required>
+                <label for="">Password</label>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div class="forget">
+                <label for=""><input type="checkbox">Remember Me_</label>
+                <a href="#"> <u>Forget Password</u></a> 
+            </div>
+            <button type="submit">Log in</button>
+            <div class="register">
+                <p>Don't have an account <a href="#"> <u>Sign Up</u></a></p>
+            </div>
+        </form>
+    </section>
+    <script src="login.js"></script>
+</body>
+
+</html>

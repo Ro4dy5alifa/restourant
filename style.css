@@ -1,0 +1,324 @@
+/* Reset and Base Styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(190, 111, 37) 100%);
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color:rgb(190, 111, 37);
+    color: #8c3d3d;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Vertically centered */
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #000;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+}
+
+/* Menu Section Styles */
+.menu-section {
+    padding: 120px 20px 20px; /* Added top padding for fixed header */
+    text-align: center;
+}
+
+.menu-section h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Increased to accommodate buttons */
+    margin: 0 auto;
+    text-align: center;
+    position: relative; /* To position buttons absolutely */
+}
+
+.menu-item {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease; /* For hover effect */
+}
+
+.menu-item.active {
+    display: flex;
+}
+
+.menu-item a {
+    display: block; /* Ensure the link wraps the image properly */
+}
+
+.menu-image {
+    width: 250px; /* Adjusted size */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* For smooth hover movement */
+}
+
+/* Hover effect on menu images */
+.menu-item a:hover .menu-image {
+    transform: translateY(-10px);
+}
+
+/* Navigation Buttons */
+.menu-nav-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.menu-nav-btn:hover {
+    background-color: #e5533d;
+}
+
+/* Position the buttons on the sides */
+#prevBtn {
+    position: absolute;
+    left: -60px; /* Adjust as needed for spacing */
+}
+
+#nextBtn {
+    position: absolute;
+    right: -60px; /* Adjust as needed for spacing */
+}
+
+/* Detailed Sections Container */
+.detailed-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background:linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(190, 111, 37) 100%);
+    flex: 1 1 25%; /* This makes each section take up equal space (25% of the container) */
+    box-sizing: border-box; /* Ensures padding and borders are included in width calculations */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional border for styling */
+    margin-top: 20px;
+}
+
+/* Section Rows */
+.section-row {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between sections */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+/* Food Sections */
+.food-section {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px); /* Each section takes 25% of the row minus margins */
+    min-width: 250px; /* Minimum width to prevent sections from being too small */
+}
+.food-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.restaurant-listing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.restaurant.active,
+.restaurant[style*="display: flex"],
+.restaurant[style*="display: block"] {
+    display: flex;
+}
+
+.section-image {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* For hover effect */
+}
+
+/* Hover effect on section images */
+.section-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Navigation Buttons within Detailed Sections */
+.image-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-nav button,
+.image-nav .view-Menu,
+.image-nav .custom-button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.image-nav .prev-btn,
+.image-nav .next-btn {
+    background-color: #ff6347;
+    color: white;
+}
+
+.image-nav .prev-btn:hover,
+.image-nav .next-btn:hover {
+    background-color: #e5533d;
+}
+
+.view-Menu {
+    background-color: #230505;
+    color: #fff;
+}
+
+.view-Menu:hover {
+    background-color: #1c0404;
+}
+
+.custom-button {
+    background-color: #e99621;
+    color: white;
+}
+
+.custom-button:hover {
+    background-color: #d6851f;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .section-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .food-section {
+        flex: 1 1 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    #prevBtn, #nextBtn {
+        left: -40px;
+        right: -40px;
+    }
+
+    .menu-nav-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .menu-image {
+        width: 200px;
+    }
+
+    .section-image {
+        width: 150px; /* Smaller size for mobile */
+    }
+    .detailed-section {
+        flex: 1 1 50%; /* Two sections side by side on smaller screens */
+    }
+
+    .image-nav button,
+    .image-nav .view-Menu,
+    .image-nav .custom-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 480px) {
+    .detailed-section {
+        flex: 1 1 100%; /* Stacks sections on top of each other on very small screens */
+    }
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">Restaurant</div>
+            <ul class="nav-links">
+                <li><a href="project.html" class="active">Home</a></li>
+                <li><a href="#menu-section">Menu</a></li>
+                <li><a href="Review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Menu Section -->
+    <section id="menu-section" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-container" id="menuContainer">
+            <!-- Previous Button -->
+            <button id="prevBtn" class="menu-nav-btn" aria-label="Previous Menu Item">&lt;</button>
+            
+            <!-- Menu Items -->
+            <div class="menu-item active">
+                <a href="#pizza-section">
+                    <img src="pizza.jpg" alt="Pizza" class="menu-image">
+                </a>
+                <h3>PIZZA</h3>
+                <p>Delicious cheese and tomato pizza.</p>
+            </div>
+            <div class="menu-item">
+                <a href="#burger-section">
+                    <img src="burger.jpg" alt="Burger" class="menu-image">
+                </a>
+                <h3>BURGER</h3>
+                <p>Juicy beef burger with fresh toppings.</p>
+            </div>
+            <div class="menu-item">
+                <a href="#fish-section">
+                    <img src="fish.jpg" alt="Fish" class="menu-image">
+                </a>
+                <h3>FISH</h3>
+                <p>Fresh grilled fish served with herbs.</p>
+            </div>
+            <div class="menu-item">
+                <a href="#chicken-section">
+                    <img src="chicken.jpg" alt="Chicken" class="menu-image">
+                </a>
+                <h3>CHICKEN</h3>
+                <p>Succulent grilled chicken with spices.</p>
+            </div>
+            
+            <!-- Next Button -->
+            <button id="nextBtn" class="menu-nav-btn" aria-label="Next Menu Item">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Detailed Sections Container -->
+    <section id="detailed-sections" class="detailed-sections">
+        <!-- First Row: Pizza and Burger -->
+        <div class="section-row">
+            <!-- Pizza Section -->
+            <section id="pizza-section" class="food-section">
+                <h2>Pizza Dishes</h2>
+                <div class="restaurant-listing">
+                    <div class="food2">
+                        <article class="restaurant active" data-index="0">
+                            <a href="#">
+                                <img src="pizza1.jpg" alt="Cheese Pizza" class="section-image">
+                            </a>
+                            <h3>Cheese Pizza</h3>
+                            <p>Decadent crust, rich tomato sauce, and melted cheese perfection in every bite.</p>
+                        </article>
+                        <article class="restaurant" data-index="1" style="display: none;">
+                            <a href="#">
+                                <img src="pizza3.jpg" alt="Pepperoni Pizza" class="section-image">
+                            </a>
+                            <h3>Pepperoni</h3>
+                            <p>Pepperoni perfection: Spicy, savory, and irresistibly cheesy indulgence awaits every bite.</p>
+                        </article>
+                        <article class="restaurant" data-index="2" style="display: none;">
+                            <a href="#">
+                                <img src="pizza2.jpg" alt="Margherita Pizza" class="section-image">
+                            </a>
+                            <h3>Margherita</h3>
+                            <p>Fresh basil, ripe tomatoes, and mozzarella unite in Margherita pizza bliss.</p>
+                        </article>
+                        <!-- Navigation buttons -->
+                        <div class="image-nav">
+                            <button class="prev-btn" aria-label="Previous Pizza">&lt;</button>
+                            <a href="#" class="View Menu">
+                                <button class="view-Menu">View Menu</button>
+                            </a>
+                            <a href="order.html" class="button-link">
+                                <button class="custom-button">Order now</button>
+                            </a>
+                            <button class="next-btn" aria-label="Next Pizza">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Burger Section -->
+            <section id="burger-section" class="food-section">
+                <h2>Burger Dishes</h2>
+                <div class="restaurant-listing">
+                    <div class="food3">
+                        <article class="restaurant active" data-index="0">
+                            <a href="#">
+                                <img src="burger2.jpg" alt="Cheeseburger" class="section-image">
+                            </a>
+                            <h3>Cheeseburger</h3>
+                            <p>Cheeseburger bliss: Juicy beef, melted cheese, and savory perfection in every bite.</p>
+                        </article>
+                        <article class="restaurant" data-index="1" style="display: none;">
+                            <a href="#">
+                                <img src="burger3.jpg" alt="Veggie Burger" class="section-image">
+                            </a>
+                            <h3>Veggie Burger</h3>
+                            <p>Veggie burger delight: Plant-based, flavorful, and satisfyingly wholesome goodness awaits.</p>
+                        </article>
+                        <!-- Navigation buttons -->
+                        <div class="image-nav">
+                            <button class="prev-btn" aria-label="Previous Burger">&lt;</button>
+                            <a href="#" class="View Menu">
+                                <button class="view-Menu">View Menu</button>
+                            </a>
+                            <a href="order.html" class="button-link">
+                                <button class="custom-button">Order now</button>
+                            </a>
+                            <button class="next-btn" aria-label="Next Burger">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Second Row: Fish and Chicken -->
+        <div class="section-row">
+            <!-- Fish Section -->
+            <section id="fish-section" class="food-section">
+                <h2>Fish Dishes</h2>
+                <div class="restaurant-listing">
+                    <div class="food1">
+                        <article class="restaurant active" data-index="0">
+                            <a href="#">
+                                <img src="fish1.jpg" alt="Shrimp Po' Boy" class="section-image">
+                            </a>
+                            <h3>Shrimp Po' Boy</h3>
+                            <p>Shrimp Po' Boy Bliss: Crispy shrimp, tangy sauce, a taste of New Orleans delight.</p>
+                        </article>
+                        <article class="restaurant" data-index="1" style="display: none;">
+                            <a href="#">
+                                <img src="fish2.jpg" alt="Shrimp Scampi" class="section-image">
+                            </a>
+                            <h3>Shrimp Scampi</h3>
+                            <p>Shrimp Scampi Perfection: Succulent shrimp, garlic, and lemon-infused linguine, pure coastal indulgence.</p>
+                        </article>
+                        <article class="restaurant" data-index="2" style="display: none;">
+                            <a href="#">
+                                <img src="fish3.jpg" alt="Grilled Fish" class="section-image">
+                            </a>
+                            <h3>Grilled Fish</h3>
+                            <p>Grilled Fish Fiesta: Flaky, seasoned, and grilled to perfection, aquatic delight awaits.</p>
+                        </article>
+                        <!-- Navigation buttons -->
+                        <div class="image-nav">
+                            <button class="prev-btn" aria-label="Previous Fish">&lt;</button>
+                            <a href="#" class="View Menu">
+                                <button class="view-Menu">View Menu</button>
+                            </a>
+                            <a href="order.html" class="button-link">
+                                <button class="custom-button">Order now</button>
+                            </a>
+                            <button class="next-btn" aria-label="Next Fish">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chicken Section -->
+            <section id="chicken-section" class="food-section">
+                <h2>Chicken Dishes</h2>
+                <div class="restaurant-listing">
+                    <div class="food4">
+                        <article class="restaurant active" data-index="0">
+                            <a href="#">
+                                <img src="chicken1.jpg" alt="Grilled Chicken" class="section-image">
+                            </a>
+                            <h3>Grilled Chicken</h3>
+                            <p>Perfectly grilled chicken with a blend of aromatic spices.</p>
+                        </article>
+                        <article class="restaurant" data-index="1" style="display: none;">
+                            <a href="#">
+                                <img src="chicken2.jpg" alt="Fried Chicken" class="section-image">
+                            </a>
+                            <h3>Fried Chicken</h3>
+                            <p>Crispy on the outside, juicy on the inside – our fried chicken is a crowd favorite.</p>
+                        </article>
+                        <!-- Navigation buttons -->
+                        <div class="image-nav">
+                            <button class="prev-btn" aria-label="Previous Chicken">&lt;</button>
+                            <a href="#" class="View Menu">
+                                <button class="view-Menu">View Menu</button>
+                            </a>
+                            <a href="order.html" class="button-link">
+                                <button class="custom-button">Order now</button>
+                            </a>
+                            <button class="next-btn" aria-label="Next Chicken">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Restaurant Guide</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="project.js"></script>
+</body>
+</html>
